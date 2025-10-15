@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">MeuPortfólio</a>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a>
+          <ul class="submenu">
+            <li><a href="#web">Web</a></li>
+            <li><a href="#mobile">Mobile</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </nav>
+  <header>
+    <div class="container">
+      <h1 style="grid-column: span 12;">Meus Projetos</h1>
+      <p style="grid-column: span 12;">Confira todos os projetos que desenvolvi</p>
+    </div>
+  </header>
+  <main class="container">
+    <section style="grid-column: span 12;">
+      <h2>Projetos Web</h2>
+      <div style="display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--space-2);">
+        <div class="card">
+          <h3>Projeto Web 1</h3>
+          <p>Descrição do projeto web desenvolvido com React.</p>
+          <div>
+            <span class="badge">Web</span>
+            <span class="tag">React</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Projeto Web 2</h3>
+          <p>Descrição do segundo projeto web com tecnologias modernas.</p>
+          <div>
+            <span class="badge">Web</span>
+            <span class="tag">Vue.js</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="grid-column: span 12;">
+      <h2>Projetos Mobile</h2>
+      <div style="display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--space-2);">
+        <div class="card">
+          <h3>Projeto Mobile 1</h3>
+          <p>Aplicativo mobile desenvolvido com Flutter.</p>
+          <div>
+            <span class="badge">Mobile</span>
+            <span class="tag">Flutter</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

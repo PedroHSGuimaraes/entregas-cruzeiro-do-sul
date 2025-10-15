@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrega II - Estilização</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">MeuPortfólio</a>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a>
+          <ul class="submenu">
+            <li><a href="#web">Web</a></li>
+            <li><a href="#mobile">Mobile</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </nav>
+  <header>
+    <div class="container">
+      <h1 style="grid-column: span 12;">Bem-vindo ao Portfólio</h1>
+      <p style="grid-column: span 12;">Veja meus projetos e entre em contato!</p>
+    </div>
+  </header>
+  <main class="container">
+    <section style="grid-column: span 12;">
+      <h2>Projetos em Destaque</h2>
+      <div style="display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--space-2);">
+        <div class="card">
+          <h3>Projeto 1</h3>
+          <p>Descrição do primeiro projeto em destaque.</p>
+        </div>
+        <div class="card">
+          <h3>Projeto 2</h3>
+          <p>Descrição do segundo projeto em destaque.</p>
+        </div>
+        <div class="card">
+          <h3>Projeto 3</h3>
+          <p>Descrição do terceiro projeto em destaque.</p>
+        </div>
+      </div>
+    </section>
+    <section style="grid-column: span 6;">
+      <h2>Contato Rápido</h2>
+      <form>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <button class="button" type="submit">Enviar</button>
+      </form>
+    </section>
+    <section style="grid-column: span 6;">
+      <h2>Componentes de Feedback</h2>
+      <div class="alert">Mensagem de alerta importante!</div>
+
+      <h3 style="margin-top: var(--space-3);">Toast (Notificações)</h3>
+      <div style="margin-top: var(--space-2);">
+        <button id="show-toast-btn" class="button">Toast Simples</button>
+        <button id="show-toast-image-btn" class="button" style="margin-left: var(--space-2);">Toast com Imagem</button>
+      </div>
+
+      <h3 style="margin-top: var(--space-3);">Modal (Janelas)</h3>
+      <div style="margin-top: var(--space-2);">
+        <button id="open-modal-btn" class="button">Modal Simples</button>
+        <button id="open-modal-image-btn" class="button" style="margin-left: var(--space-2);">Modal com Imagem</button>
+      </div>
+
+      <h3 style="margin-top: var(--space-3);">Tags e Badges</h3>
+      <div style="margin-top: var(--space-2);">
+        <span class="badge">Novo</span>
+        <span class="badge">Em Destaque</span>
+      </div>
+      <div style="margin-top: var(--space-2);">
+        <span class="tag">Web</span>
+        <span class="tag">Design</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast (sempre presente, controlado por JavaScript) -->
+  <div class="toast">Notificação de sucesso!</div>
+
+  <!-- Modal Overlay -->
+  <div class="modal-overlay"></div>
+
+  <!-- Modal -->
+  <div class="modal">
+    <h2 style="margin-top: 0;">Título do Modal</h2>
+    <p>Este é o conteúdo do modal. Você pode clicar fora dele ou pressionar ESC para fechar.</p>
+    <button id="close-modal-btn" class="button">Fechar</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

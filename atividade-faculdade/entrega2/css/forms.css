@@ -1,0 +1,53 @@
+/* Formulários estilizados e validação visual */
+@import "./variables.css";
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  background: #fff;
+  padding: var(--space-3);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  grid-column: span 12;
+}
+
+@media (max-width: 768px) {
+  form {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 320px) {
+  form {
+    grid-column: span 1;
+  }
+}
+input,
+select,
+textarea {
+  padding: var(--space-2);
+  border: var(--border-width) solid var(--color-light);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-md);
+  transition: border-color 0.2s;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--color-info);
+  outline: none;
+}
+input:invalid {
+  border-color: var(--color-danger);
+}
+label {
+  font-size: var(--font-size-sm);
+  color: var(--color-dark);
+}

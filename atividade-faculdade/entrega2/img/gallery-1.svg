@@ -1,0 +1,6 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#FF9800"/>
+  <circle cx="120" cy="80" r="30" fill="#FFB74D"/>
+  <path d="M0 300L100 180L200 220L300 140L400 200V300H0Z" fill="#F57C00"/>
+  <text x="200" y="160" font-family="Arial" font-size="24" fill="white" text-anchor="middle" font-weight="bold">Projeto Web</text>
+</svg>
