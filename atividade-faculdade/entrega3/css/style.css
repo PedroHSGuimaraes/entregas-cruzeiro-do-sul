@@ -1,0 +1,59 @@
+/* css/style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #777;
+}
+
+main {
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+input,
+button {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
